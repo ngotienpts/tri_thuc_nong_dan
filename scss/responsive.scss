@@ -13,6 +13,10 @@
         display: grid;
     }
     /*------------------------------------------------------------- index*/
+    .wrapper {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
 }
 // max width 1024px
 @media (max-width: 64em) {
@@ -30,6 +34,15 @@
     }
 
     // --------------------------------------------------------------------index
+    .wrapper {
+        padding-left: 0.875rem;
+        padding-right: 0.875rem;
+    }
+    .ads-center {
+        background: transparent;
+        box-shadow: unset;
+        padding: 0;
+    }
 
     // --------------------------------------------------------------------cate
 

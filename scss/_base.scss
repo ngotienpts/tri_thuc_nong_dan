@@ -133,6 +133,18 @@ img {
 .w-35 {
     width: 35%;
 }
+.w-40 {
+    width: 40%;
+}
+.w-60 {
+    width: 60%;
+}
+.w-65 {
+    width: 65%;
+}
+.w-70 {
+    width: 70%;
+}
 /*=================================================================*/
 .d-2xl-none {
     display: none;
@@ -275,6 +287,12 @@ img {
 .text-gray-d6 {
     color: #d6d6d6;
 }
+.text-gray-c4 {
+    color: #c4c4c4;
+}
+.text-gray-ee {
+    color: #eee;
+}
 .text-green-09 {
     color: #096639;
 }
@@ -283,6 +301,12 @@ img {
 }
 .text-cyan-508 {
     color: #508ca4;
+}
+.text-red-eb {
+    color: #eb242c;
+}
+.text-blue-152 {
+    color: #152764;
 }
 
 /*=================================================================*/
@@ -298,6 +322,9 @@ img {
 .bg-cyan-012 {
     background-color: #012710;
 }
+.bg-cyan-337 {
+    background-color: #337357;
+}
 .bg-cyan-418 {
     background-color: #418567;
 }
@@ -306,6 +333,12 @@ img {
 }
 .bg-gray-f1 {
     background-color: #f1f9ff;
+}
+.bg-green-096 {
+    background-color: #096639;
+}
+.bg-blue-28 {
+    background-color: #284fa7;
 }
 /*=================================================================*/
 .fw-300 {
@@ -707,6 +740,102 @@ img {
 }
 
 /*=================================================================*/
+.pt-30 {
+    padding-top: 1.875rem;
+}
+.pb-30 {
+    padding-bottom: 1.875rem;
+}
+.pl-30 {
+    padding-left: 1.875rem;
+}
+.pr-30 {
+    padding-right: 1.875rem;
+}
+.py-30 {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+.px-30 {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+.p-30 {
+    padding: 1.875rem;
+}
+.mt-30 {
+    margin-top: 1.875rem;
+}
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+.ml-30 {
+    margin-left: 1.875rem;
+}
+.mr-30 {
+    margin-right: 1.875rem;
+}
+.my-30 {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+.mx-30 {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+}
+.m-30 {
+    margin: 1.875rem;
+}
+
+/*=================================================================*/
+.pt-40 {
+    padding-top: 2.5rem;
+}
+.pb-40 {
+    padding-bottom: 2.5rem;
+}
+.pl-40 {
+    padding-left: 2.5rem;
+}
+.pr-40 {
+    padding-right: 2.5rem;
+}
+.py-40 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.px-40 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.p-40 {
+    padding: 2.5rem;
+}
+.mt-40 {
+    margin-top: 2.5rem;
+}
+.mb-40 {
+    margin-bottom: 2.5rem;
+}
+.ml-40 {
+    margin-left: 2.5rem;
+}
+.mr-40 {
+    margin-right: 2.5rem;
+}
+.my-40 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.mx-40 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.m-40 {
+    margin: 2.5rem;
+}
+
+/*=================================================================*/
 .border-999 {
     border-radius: 999px;
     -webkit-border-radius: 999px;
@@ -767,6 +896,9 @@ img {
     text-overflow: ellipsis;
 }
 /*=================================================================*/
+.lh-1 {
+    line-height: 1;
+}
 .lh-15 {
     line-height: 0.9375rem;
 }
@@ -806,6 +938,12 @@ img {
 .lh-130 {
     line-height: 130%;
 }
+.lh-140 {
+    line-height: 140%;
+}
+.lh-150 {
+    line-height: 150%;
+}
 
 /*=================================================================*/
 .relative {
@@ -816,6 +954,12 @@ img {
 }
 .text-center {
     text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
 }
 
 /*=================================================================*/
@@ -847,6 +991,9 @@ img {
 .col-4 {
     grid-template-columns: repeat(4, 1fr);
 }
+.col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
 /*=================================================================*/
 .gap-8 {
     grid-gap: 0.5rem;
@@ -859,6 +1006,9 @@ img {
 }
 .gap-24 {
     grid-gap: 1.5rem;
+}
+.gap-25 {
+    grid-gap: 1.5625rem;
 }
 .gap-30 {
     grid-gap: 1.875rem;
@@ -896,11 +1046,33 @@ img {
 .tracking-02 {
     letter-spacing: 0.02em;
 }
+.tracking-04 {
+    letter-spacing: 0.4px;
+}
 .tracking-073 {
     letter-spacing: 0.00735em;
 }
 .tracking-166 {
     letter-spacing: 0.16667em;
+}
+/*=================================================================*/
+.z-10 {
+    z-index: 10;
+}
+.z-20 {
+    z-index: 20;
+}
+.z-30 {
+    z-index: 30;
+}
+.z-40 {
+    z-index: 40;
+}
+.z-50 {
+    z-index: 50;
+}
+.z-100 {
+    z-index: 100;
 }
 /*=================================================================*/
 .transition {
@@ -947,4 +1119,10 @@ img {
 
 .border-e5 {
     border-bottom: 1px solid #e5e5e5;
+}
+.border-d6 {
+    border-bottom: 1px solid #d6d6d6;
+}
+.border-cyan-337 {
+    border-bottom: 1px solid #337357;
 }

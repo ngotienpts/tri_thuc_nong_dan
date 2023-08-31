@@ -16,6 +16,10 @@
   }
 
   /*------------------------------------------------------------- index*/
+  .wrapper {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
 }
 @media (max-width: 64em) {
   .d-lg-none {
@@ -32,6 +36,17 @@
 
   .d-lg-grid {
     display: grid;
+  }
+
+  .wrapper {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .ads-center {
+    background: transparent;
+    box-shadow: unset;
+    padding: 0;
   }
 }
 @media (max-width: 48em) {

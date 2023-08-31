@@ -78,3 +78,25 @@
         }
     }
 }
+
+// mobile
+
+.header-top-mb {
+    & .left {
+        .logo img {
+            height: 2.5rem;
+        }
+    }
+}
+
+.navbar-mb {
+    overflow: scroll;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+
+    & .navbar-item {
+        + .navbar-item {
+            margin-left: 1.25rem;
+        }
+    }
+}

@@ -8,30 +8,27 @@ document.addEventListener("DOMContentLoaded", function () {
             const _this = this;
 
             // when click back top
-            backTop &&
-                (backTop.onclick = function () {
+            if (backTop) {
+                backTop.onclick = function () {
                     document.body.scrollTop = 0;
                     document.documentElement.scrollTop = 0;
-                });
+                };
+            }
         },
         // scroll top
         scrollFunc: function () {
             if (backTop) {
                 if (
-                    document.body.scrollTop > 600 ||
-                    document.documentElement.scrollTop > 600
+                    document.body.scrollTop > 300 ||
+                    document.documentElement.scrollTop > 300
                 ) {
-                    backTop.style.top = "2.25rem";
+                    backTop.style.opacity = 1;
+                    backTop.style.visibility = "visible";
                 } else {
-                    backTop.style.top = "-2.25rem";
+                    backTop.style.opacity = 0;
+                    backTop.style.visibility = "hidden";
                 }
             }
-            backTop &&
-                (backTop.style.top =
-                    600 < document.body.scrollTop ||
-                    600 < document.documentElement.scrollTop
-                        ? "2.25rem"
-                        : "-2.25rem");
         },
 
         // window scroll
