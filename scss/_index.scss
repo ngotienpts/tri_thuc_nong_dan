@@ -50,6 +50,14 @@
         border-bottom: 2px solid #acce22;
     }
 }
+.heading-primary--fixColor {
+    border-bottom: 1px solid #e5e5e5;
+    a {
+        display: inline-block;
+        padding-bottom: 0.625rem;
+        border-bottom: 5px solid #096639;
+    }
+}
 
 .heading-secondary {
     border-bottom: 1px solid #096639;
@@ -291,7 +299,27 @@
     }
     & .articles__small {
         max-height: 368px;
-        overflow: scroll;
+        overflow-y: scroll;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 0.5rem;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #175339;
+            border-radius: 1rem;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #175339;
+        }
         & .article {
             &:first-child {
                 padding-top: 0;
