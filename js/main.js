@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // show popup image
     var oneSlides = document.querySelectorAll(".js__swiperItemsContainer");
 
+    // navbar mb
+    var navbarMb = document.querySelector(".js__navbarMenuMb");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -74,6 +77,29 @@ document.addEventListener("DOMContentLoaded", function () {
                     closeSearchMb.onclick = function () {
                         formSearchMb.classList.remove("active");
                     };
+                });
+            }
+
+            // navbar mb
+            if (navbarMb) {
+                const container = navbarMb.querySelector(".js__navbarMb");
+                const scrollBtn = navbarMb.querySelector(".js__navbarIcon");
+
+                let scrollAmount = 0;
+                let scrollPosition = 0;
+
+                scrollBtn.addEventListener("click", function () {
+                    const scrollDistance = 100;
+                    scrollAmount = scrollPosition + scrollDistance;
+                    scrollAmount = Math.min(
+                        scrollAmount,
+                        container.scrollWidth - container.clientWidth
+                    );
+                    container.scrollTo({
+                        left: scrollAmount,
+                        behavior: "smooth",
+                    });
+                    scrollPosition = scrollAmount;
                 });
             }
         },

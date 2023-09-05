@@ -258,3 +258,14 @@
         }
     }
 }
+.navbar-scroll-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 100%;
+    background: linear-gradient(270deg, #094d2c 28.12%, #096639 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

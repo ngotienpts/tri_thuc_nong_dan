@@ -783,9 +783,9 @@
                 <!-- end header top -->
 
                 <!-- navbar -->
-                <div class="bg-green-096 py-12 px-15">
+                <div class="navbar-menu-mb js__navbarMenuMb bg-green-096 py-12 pl-15 pr-40 relative">
                     <ul
-                        class="navbar-mb d-2xl-flex items-center fs-14 font-helve"
+                        class="navbar-mb js__navbarMb d-2xl-flex items-center fs-14 font-helve"
                     >
                         <li class="navbar-item hover-orange text-white">
                             <a href="#" class="">
@@ -822,6 +822,11 @@
                             <a href="#">Nhìn ra thế giới</a>
                         </li>
                     </ul>
+                    <div class="navbar-scroll-icon js__navbarIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0.0297852L12 2.99979L9 5.96979V3.59378H0V2.40578H9V0.0297852Z" fill="white"/>
+                            </svg>
+                    </div>
                 </div>
                 <!-- end navbar -->
             </div>
@@ -831,13 +836,13 @@
         <!-- main -->
         <main id="main" class="main">
             <!-- pc -->
-            <div class="wrapper d-2xl-block d-lg-none mt-20">
+            <div class="wrapper mt-20">
                 <!-- primary -->
-                <section class="detail-primary w-1140 d-2xl-grid gap-20">
+                <section class="detail-primary w-1140 d-2xl-grid d-lg-block gap-20">
                     <!-- left -->
-                    <div class="detail-primary__left">
+                    <div class="detail-primary__left flex-1">
                         <!-- box top -->
-                        <div class="detail-box d-2xl-flex">
+                        <div class="detail-box d-2xl-flex d-lg-block">
                             <div class="relative d-2xl-block d-lg-none">
                                 <div class="icon-share-2">
                                     <div class="detail-icon-comment">
@@ -987,6 +992,7 @@
                                     vehicle sales of 42,000 units next year, up
                                     from its previous plan of 15,000.
                                 </p>
+                                <blockquote class="expNoEdit">  <div class="bl expEdit">  <p><a class="autotag" href="https://nongnghiep.vn/rua-bien-tag37541/" target="_blank" rel="follow noopener">Rùa biển</a> là loài động vật hoang dã thuộc Danh mục nguy cấp quý, hiếm được ưu tiên bảo vệ theo Nghị định số 64/2019/NĐ-CP ngày 16/7/2019 của Chính phủ và Điều 244 Bộ luật Hình sự Việt Nam. Tại Bà Rịa - Vũng Tàu, rùa biển chỉ tập trung, sinh sống và đang được bảo tồn ở vùng biển huyện Côn Đảo. Rùa biển tại Côn Đảo thuộc diện bảo tồn thường được gắn chip ở dưới vây để theo dõi.</p>  </div>  </blockquote>
                                 <div
                                     class="detaail-name-author fs-13 font-arial text-gray-66 mb-20 text-right"
                                 >
@@ -996,83 +1002,53 @@
                         </div>
                         <!-- end box top -->
                         <!-- share -->
-                        <div class="detail-icon-share-line mb-20">
-                            <div class="detail-icon-share">
-                                <a
-                                    href="#"
-                                    class="text-white detail-icon-share__link detail-fb-icon"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="36"
-                                        height="36"
-                                        viewBox="0 0 36 36"
-                                        fill="none"
-                                    >
-                                        <rect
-                                            width="36"
-                                            height="36"
-                                            fill="#3B5999"
-                                        />
-                                        <path
-                                            d="M21.6316 15.6789L21.339 18.0092H19.3885V25H16.7554V18.0092H15V15.6789H16.7554V14.2225C16.7554 13.3487 16.9505 12.5719 17.3406 11.7952C17.9257 11.2126 18.8034 10.9213 19.5836 11.0184H21.5341V13.4458H20.3638C20.0712 13.3487 19.7786 13.4458 19.5836 13.6399C19.3885 13.9312 19.3885 14.2225 19.3885 14.4167V15.5818H21.6316V15.6789Z"
-                                            fill="white"
-                                        />
-                                    </svg>
+                        <div class="detail-share mb-20 d-2xl-flex items-center">
+                            <div class="detail-share__item">
+                                <a href="#" class="detail-share__link detail-share--fb">
+                                    <img src="./images/svg/fb-f.svg" alt="">
                                 </a>
+                                    
                             </div>
-                            <div class="detail-icon-share">
-                                <a
-                                    href="#"
-                                    class="text-white detail-icon-share__link detail-like-icon"
-                                    ><i class="far fa-thumbs-up"></i>&nbsp;<span
-                                        class="fs-14"
-                                        >Like</span
-                                    ></a
-                                >
-                            </div>
-                            <div class="detail-icon-share">
-                                <a
-                                    href="#"
-                                    class="text-white detail-icon-share__link detail-twitter-icon"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="12"
-                                        viewBox="0 0 16 12"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M13.4375 3.03321C13.4375 3.13432 13.4375 3.33653 13.4375 3.43764C13.4375 5.56089 12.6041 7.68414 11.0416 9.30185C9.47914 11.1218 7.08331 12.0317 4.68749 11.9306C3.02083 11.9306 1.35416 11.4251 0 10.6162C0.208333 10.6162 0.520832 10.6162 0.729165 10.6162C2.08333 10.6162 3.43749 10.2118 4.47916 9.30185C3.85416 9.30185 3.22916 9.09964 2.70833 8.69521C2.18749 8.29078 1.87499 7.78525 1.66666 7.1786C1.87499 7.1786 2.08333 7.1786 2.29166 7.1786C2.60416 7.1786 2.81249 7.1786 3.12499 7.0775C2.39583 6.97639 1.77083 6.67307 1.25 6.06643C0.833331 5.56089 0.520832 4.95425 0.624998 4.2465C1.04166 4.44871 1.45833 4.54982 1.97916 4.54982C1.14583 4.04428 0.520832 3.13432 0.624998 2.12325C0.624998 1.61771 0.833331 1.11218 1.04166 0.606643C2.60416 2.52768 4.89582 3.63986 7.39581 3.74096C7.29165 3.43764 7.29165 3.23543 7.29165 3.03321C7.29165 1.4155 8.64581 0 10.4166 0C11.25 0 12.0833 0.303321 12.7083 0.909964C13.4375 0.808857 14.0625 0.606643 14.6875 0.202214C14.4791 0.909964 13.9583 1.51661 13.3333 1.81993C13.9583 1.71882 14.4791 1.61771 15.1041 1.31439C14.5833 2.02214 14.0625 2.52768 13.4375 3.03321Z"
-                                            fill="white"
-                                        />
-                                    </svg>
+                            <div class="detail-share__item">
+                                <a href="#" class="detail-share__link detail-share--like d-2xl-flex items-center">
+                                    <img src="./images/svg/like.svg" alt="">
+                                    <span class="fs-13">Like</span>
                                 </a>
+                                    
                             </div>
-                            <div class="detail-icon-share">
-                                <a
-                                    href="#"
-                                    class="text-white detail-icon-share__link detail-linker-icon"
-                                >
+                            <div class="detail-share__item">
+                                <a href="#" class="detail-share__link detail-share--twitter">
+                                    <img src="./images/svg/twitter.svg" alt="">
                                 </a>
+                                    
                             </div>
-                            <div class="detail-icon-share">
-                                <a
-                                    href="#"
-                                    class="text-white detail-icon-share__link detail-email-icon"
-                                    ><img src="./images/email.png" alt=""
-                                /></a>
+                            <div class="detail-share__item">
+                                <a href="#" class="detail-share__link detail-share--linked">
+                                    <img src="./images/svg/linker.svg" alt="">
+                                </a>
+                                    
                             </div>
+                            <div class="detail-share__item">
+                                <a href="#" class="detail-share__link detail-share--email">
+                                    <img src="./images/svg/email.svg" alt="">
+                                </a>
+                                    
+                            </div>
+                            
                         </div>
                         <!-- end share -->
+                        <!-- ads -->
+                        <div class="ads-center mb-20">
+                            <img src="./images/ads_center.png" alt="">
+                        </div>
+                        <!-- end ads -->
                         <!-- tag lien quan mb -->
-                        <div class="detail-tags__mb d-2xl-none d-lg-flex">
-                            <div class="detail-tags">
-                                <div class="detail-tag-icon detail-tag">
-                                    <i class="fas fa-tags text-blue-28 mr-1"></i
-                                    >Tags:
-                                </div>
+                        <div class="detail-tags__mb d-2xl-none d-lg-flex mb-24">
+                            <div class="detail-tag-icon flex-0 detail-tag">
+                                <img src="./images/svg/tag.svg" alt="">
+                                <span>Tags:</span>
+                            </div>
+                            <div class="detail-tags flex-1">
                                 <div class="detail-tag-item detail-tag">
                                     <a href="#">Philippines</a>
                                 </div>
@@ -1086,15 +1062,15 @@
                         </div>
                         <!-- end tag lien quan mb -->
                         <!-- comment -->
-                        <div class="mb-20 text-center">Load comment FB</div>
+                        <div class="detail-comment mb-20 text-center">sử dụng iframe bình luận có sẵn</div>
                         <!-- end comment -->
                         <!-- tag lien quan pc -->
                         <div class="detail-tags__pc d-2xl-flex d-lg-none">
-                            <div class="detail-tags">
-                                <div class="detail-tag-icon detail-tag">
-                                    <i class="fas fa-tags text-blue-28 mr-1"></i
-                                    >Tags:
-                                </div>
+                            <div class="detail-tag-icon detail-tag flex-0">
+                                <img src="./images/svg/tag.svg" alt="">
+                                <span>Tags:</span>
+                            </div>
+                            <div class="detail-tags flex-1">
                                 <div class="detail-tag-item detail-tag">
                                     <a href="#">Philippines</a>
                                 </div>
@@ -1107,10 +1083,319 @@
                             </div>
                         </div>
                         <!-- end tag lien quan pc -->
+
+                        <!-- tin lien quan -->
+                        <div class="related-news mt-40">
+                            <!-- heading -->
+                            <h2 class="heading-secondary text-green-09 fs-20 fw-700 uppercase lh-130 font-helve mb-20">
+                                <a href="#">Tin liên quan</a>
+                            </h2>
+                            <!-- end heading -->
+
+                            <!-- container -->
+                            <div class="realated-news__container d-2xl-grid gap-20 col-3">
+                                <!-- article -->
+                                <div class="article border-e5 pb-12 hover-orange">
+                                    <!-- img -->
+                                    <div class="article__img">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content pt-12">
+                                        <h3 class="article__title fix-text3 font-helve fs-17 fw-500 lh-22">
+                                            <a href="#">Vực dậy nghề muối, tăng thu nhập
+                                                cho diêm dân</a>
+                                        </h3>
+                                        <div class="time-public d-2xl-none d-lg-flex items-center mt-10">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                                <g clip-path="url(#clip0_41_1706)">
+                                                    <path d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z" fill="#333333"></path>
+                                                    <path d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z" fill="#333333"></path>
+                                                </g>
+                                            </svg>
+                                            <span class="text-gray-82 fs-13 font-arial ml-4 lh-1">3hr</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article border-e5 pb-12 hover-orange">
+                                    <!-- img -->
+                                    <div class="article__img">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content pt-12">
+                                        <h3 class="article__title fix-text3 font-helve fs-17 fw-500 lh-22">
+                                            <a href="#">Vực dậy nghề muối, tăng thu nhập
+                                                cho diêm dân</a>
+                                        </h3>
+                                        <div class="time-public d-2xl-none d-lg-flex items-center mt-10">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                                <g clip-path="url(#clip0_41_1706)">
+                                                    <path d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z" fill="#333333"></path>
+                                                    <path d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z" fill="#333333"></path>
+                                                </g>
+                                            </svg>
+                                            <span class="text-gray-82 fs-13 font-arial ml-4 lh-1">3hr</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article border-e5 pb-12 hover-orange">
+                                    <!-- img -->
+                                    <div class="article__img">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content pt-12">
+                                        <h3 class="article__title fix-text3 font-helve fs-17 fw-500 lh-22">
+                                            <a href="#">Vực dậy nghề muối, tăng thu nhập
+                                                cho diêm dân</a>
+                                        </h3>
+                                        <div class="time-public d-2xl-none d-lg-flex items-center mt-10">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                                <g clip-path="url(#clip0_41_1706)">
+                                                    <path d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z" fill="#333333"></path>
+                                                    <path d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z" fill="#333333"></path>
+                                                </g>
+                                            </svg>
+                                            <span class="text-gray-82 fs-13 font-arial ml-4 lh-1">3hr</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article border-e5 pb-12 hover-orange">
+                                    <!-- img -->
+                                    <div class="article__img">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content pt-12">
+                                        <h3 class="article__title fix-text3 font-helve fs-17 fw-500 lh-22">
+                                            <a href="#">Vực dậy nghề muối, tăng thu nhập
+                                                cho diêm dân</a>
+                                        </h3>
+                                        <div class="time-public d-2xl-none d-lg-flex items-center mt-10">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                                <g clip-path="url(#clip0_41_1706)">
+                                                    <path d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z" fill="#333333"></path>
+                                                    <path d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z" fill="#333333"></path>
+                                                </g>
+                                            </svg>
+                                            <span class="text-gray-82 fs-13 font-arial ml-4 lh-1">3hr</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article border-e5 pb-12 hover-orange">
+                                    <!-- img -->
+                                    <div class="article__img">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content pt-12">
+                                        <h3 class="article__title fix-text3 font-helve fs-17 fw-500 lh-22">
+                                            <a href="#">Vực dậy nghề muối, tăng thu nhập
+                                                cho diêm dân</a>
+                                        </h3>
+                                        <div class="time-public d-2xl-none d-lg-flex items-center mt-10">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                                <g clip-path="url(#clip0_41_1706)">
+                                                    <path d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z" fill="#333333"></path>
+                                                    <path d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z" fill="#333333"></path>
+                                                </g>
+                                            </svg>
+                                            <span class="text-gray-82 fs-13 font-arial ml-4 lh-1">3hr</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article border-e5 pb-12 hover-orange">
+                                    <!-- img -->
+                                    <div class="article__img">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content pt-12">
+                                        <h3 class="article__title fix-text3 font-helve fs-17 fw-500 lh-22">
+                                            <a href="#">Vực dậy nghề muối, tăng thu nhập
+                                                cho diêm dân</a>
+                                        </h3>
+                                        <div class="time-public d-2xl-none d-lg-flex items-center mt-10">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                                <g clip-path="url(#clip0_41_1706)">
+                                                    <path d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z" fill="#333333"></path>
+                                                    <path d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z" fill="#333333"></path>
+                                                </g>
+                                            </svg>
+                                            <span class="text-gray-82 fs-13 font-arial ml-4 lh-1">3hr</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                
+                            </div>
+                            <!-- end container -->
+                        </div>
+                        <!-- end tin lien quan -->
+
+                        <!-- tin khac -->
+                        <div class="other-news mt-40">
+                            <!-- heading -->
+                            <h2 class="heading-secondary text-green-09 fs-20 fw-700 uppercase lh-130 font-helve mb-20">
+                                <a href="#">Tin khác</a>
+                            </h2>
+                            <!-- end heading -->
+
+                            <!-- container -->
+                            <div class="other-news__container">
+                                <!-- article -->
+                                <div class="article d-2xl-flex border-e5 py-20">
+                                    <!-- img -->
+                                    <div class="article__img flex-0 w-30">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content flex-1 pl-15">
+                                        <h3 class="article__title fix-text3 fs-20 font-helve lh-130 fw-600 hover-orange tracking-04">
+                                            <a href="#">Học viện Nông nghiệp Việt Nam - nơi ươm
+                                                mầm nông nghiệp thông minh</a>
+                                        </h3>
+                                        <p class="article__des fix-text4 fs-15 font-arial text-gray-44 lh-130 pt-10">
+                                            Là đất nước sản xuất muối tiềm năng, nhưng
+                                            mỗi năm Việt Nam vẫn phải nhập khẩu muối để
+                                            đáp ứng nhu cầu trong nước. Muối nội địa có
+                                            giá thành cao, chất lượng thấp, rất khó cạnh
+                                            tranh với muối nhập khẩu nên khó tiêu thụ.
+                                        </p>
+                                        <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-10">
+                                            <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
+                                            <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article d-2xl-flex border-e5 py-20">
+                                    <!-- img -->
+                                    <div class="article__img flex-0 w-30">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content flex-1 pl-15">
+                                        <h3 class="article__title fix-text3 fs-20 font-helve lh-130 fw-600 hover-orange tracking-04">
+                                            <a href="#">Học viện Nông nghiệp Việt Nam - nơi ươm
+                                                mầm nông nghiệp thông minh</a>
+                                        </h3>
+                                        <p class="article__des fix-text4 fs-15 font-arial text-gray-44 lh-130 pt-10">
+                                            Là đất nước sản xuất muối tiềm năng, nhưng
+                                            mỗi năm Việt Nam vẫn phải nhập khẩu muối để
+                                            đáp ứng nhu cầu trong nước. Muối nội địa có
+                                            giá thành cao, chất lượng thấp, rất khó cạnh
+                                            tranh với muối nhập khẩu nên khó tiêu thụ.
+                                        </p>
+                                        <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-10">
+                                            <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
+                                            <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article d-2xl-flex border-e5 py-20">
+                                    <!-- img -->
+                                    <div class="article__img flex-0 w-30">
+                                        <a href="#" class="image-wrapper">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article__content flex-1 pl-15">
+                                        <h3 class="article__title fix-text3 fs-20 font-helve lh-130 fw-600 hover-orange tracking-04">
+                                            <a href="#">Học viện Nông nghiệp Việt Nam - nơi ươm
+                                                mầm nông nghiệp thông minh</a>
+                                        </h3>
+                                        <p class="article__des fix-text4 fs-15 font-arial text-gray-44 lh-130 pt-10">
+                                            Là đất nước sản xuất muối tiềm năng, nhưng
+                                            mỗi năm Việt Nam vẫn phải nhập khẩu muối để
+                                            đáp ứng nhu cầu trong nước. Muối nội địa có
+                                            giá thành cao, chất lượng thấp, rất khó cạnh
+                                            tranh với muối nhập khẩu nên khó tiêu thụ.
+                                        </p>
+                                        <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-10">
+                                            <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
+                                            <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                
+                            </div>
+                            <!-- end container -->
+                        </div>
+                        <!-- end tin khac -->
+
+                        <!-- pagination -->
+                        <ul
+                            class="pagination d-2xl-flex d-lg-none items-center fs-14 font-sarabun lh-150 uppercase fw-600 text-gray-66 mt-30"
+                        >
+                            <li class="pagination-item active">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                        </ul>
+                        <!-- end pagination -->
                     </div>
                     <!-- end left -->
                     <!-- right -->
-                    <div class="detail-primary__right">
+                    <div class="detail-primary__right flex-0 d-2xl-block d-lg-none">
                         <!-- box event -->
                         <div class="box-event mb-30">
                             <!-- heading -->
@@ -1399,479 +1684,7 @@
                 <!-- end ads center -->
             </div>
             <!-- end pc -->
-
-            <!-- mobile -->
-            <div class="d-2xl-none d-lg-block">
-                <!-- box primary -->
-                <section class="box-primary w-1140">
-                    <!-- large -->
-                    <div class="articles__large">
-                        <!-- img -->
-                        <div class="article__img">
-                            <a href="#" class="image-wrapper">
-                                <img src="./images/3.jpg" alt="" />
-                            </a>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="article__content bg-gray-f1 py-10 px-15">
-                            <h1
-                                class="article__title fix-text3 fs-24 lh-130 fw-500 hover-orange tracking-04"
-                            >
-                                <a href="#"
-                                    >Vực dậy nghề muối, tăng thu nhập cho diêm
-                                    dân</a
-                                >
-                            </h1>
-                            <div
-                                class="time-public d-2xl-flex items-center fs-13 font-arial py-12"
-                            >
-                                <span
-                                    class="d-2xl-inline-block fw-700 text-gray-66"
-                                    >Quốc tế</span
-                                >
-                                <span
-                                    class="d-2xl-inline-block fw-400 text-gray-82"
-                                    >&nbsp;-&nbsp;7h</span
-                                >
-                            </div>
-                            <p
-                                class="article__des fix-text4 fs-15 font-arial text-gray-44 lh-130"
-                            >
-                                Là đất nước sản xuất muối tiềm năng, nhưng mỗi
-                                năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng
-                                nhu cầu trong nước. Muối nội địa có giá thành
-                                cao, chất lượng thấp, rất khó cạnh tranh với
-                                muối nhập khẩu nên khó tiêu thụ.
-                            </p>
-                        </div>
-                        <!-- end content -->
-                    </div>
-                    <!-- end large -->
-
-                    <!-- small -->
-                    <div
-                        class="articles__small d-2xl-grid col-2 mt-20 px-15 border-e5 pb-20"
-                    >
-                        <!-- article -->
-                        <div class="article">
-                            <!-- img -->
-                            <div class="article__img">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content pt-10">
-                                <h3
-                                    class="article__title fix-text3 font-roboto fs-17 fw-500 lh-22"
-                                >
-                                    <a href="#"
-                                        >Vực dậy nghề muối, tăng thu nhập cho
-                                        diêm dân</a
-                                    >
-                                </h3>
-                                <div
-                                    class="time-public d-2xl-flex items-center mt-10"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                    >
-                                        <g clip-path="url(#clip0_41_1706)">
-                                            <path
-                                                d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z"
-                                                fill="#333333"
-                                            />
-                                            <path
-                                                d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z"
-                                                fill="#333333"
-                                            />
-                                        </g>
-                                    </svg>
-                                    <span
-                                        class="text-gray-82 fs-13 font-arial ml-4 lh-1"
-                                        >3hr</span
-                                    >
-                                </div>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article">
-                            <!-- img -->
-                            <div class="article__img">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content pt-10">
-                                <h3
-                                    class="article__title fix-text3 font-roboto fs-17 fw-500 lh-22"
-                                >
-                                    <a href="#"
-                                        >Vực dậy nghề muối, tăng thu nhập cho
-                                        diêm dân</a
-                                    >
-                                </h3>
-                                <div
-                                    class="time-public d-2xl-flex items-center mt-10"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                    >
-                                        <g clip-path="url(#clip0_41_1706)">
-                                            <path
-                                                d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z"
-                                                fill="#333333"
-                                            />
-                                            <path
-                                                d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z"
-                                                fill="#333333"
-                                            />
-                                        </g>
-                                    </svg>
-                                    <span
-                                        class="text-gray-82 fs-13 font-arial ml-4 lh-1"
-                                        >3hr</span
-                                    >
-                                </div>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article">
-                            <!-- img -->
-                            <div class="article__img">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content pt-10">
-                                <h3
-                                    class="article__title fix-text3 font-roboto fs-17 fw-500 lh-22"
-                                >
-                                    <a href="#"
-                                        >Vực dậy nghề muối, tăng thu nhập cho
-                                        diêm dân</a
-                                    >
-                                </h3>
-                                <div
-                                    class="time-public d-2xl-flex items-center mt-10"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                    >
-                                        <g clip-path="url(#clip0_41_1706)">
-                                            <path
-                                                d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z"
-                                                fill="#333333"
-                                            />
-                                            <path
-                                                d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z"
-                                                fill="#333333"
-                                            />
-                                        </g>
-                                    </svg>
-                                    <span
-                                        class="text-gray-82 fs-13 font-arial ml-4 lh-1"
-                                        >3hr</span
-                                    >
-                                </div>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article">
-                            <!-- img -->
-                            <div class="article__img">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content pt-10">
-                                <h3
-                                    class="article__title fix-text3 font-roboto fs-17 fw-500 lh-22"
-                                >
-                                    <a href="#"
-                                        >Vực dậy nghề muối, tăng thu nhập cho
-                                        diêm dân</a
-                                    >
-                                </h3>
-                                <div
-                                    class="time-public d-2xl-flex items-center mt-10"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                    >
-                                        <g clip-path="url(#clip0_41_1706)">
-                                            <path
-                                                d="M7 0C8.72391 0 10.3772 0.684819 11.5962 1.90381C12.8152 3.12279 13.5 4.77609 13.5 6.5C13.5 8.22391 12.8152 9.87721 11.5962 11.0962C10.3772 12.3152 8.72391 13 7 13C5.27609 13 3.62279 12.3152 2.40381 11.0962C1.18482 9.87721 0.5 8.22391 0.5 6.5C0.5 4.77609 1.18482 3.12279 2.40381 1.90381C3.62279 0.684819 5.27609 0 7 0V0ZM7 1C6.27773 1 5.56253 1.14226 4.89524 1.41866C4.22795 1.69506 3.62163 2.10019 3.11091 2.61091C2.60019 3.12163 2.19506 3.72795 1.91866 4.39524C1.64226 5.06253 1.5 5.77773 1.5 6.5C1.5 7.22227 1.64226 7.93747 1.91866 8.60476C2.19506 9.27205 2.60019 9.87837 3.11091 10.3891C3.62163 10.8998 4.22795 11.3049 4.89524 11.5813C5.56253 11.8577 6.27773 12 7 12C8.45869 12 9.85764 11.4205 10.8891 10.3891C11.9205 9.35764 12.5 7.95869 12.5 6.5C12.5 5.04131 11.9205 3.64236 10.8891 2.61091C9.85764 1.57946 8.45869 1 7 1Z"
-                                                fill="#333333"
-                                            />
-                                            <path
-                                                d="M7.5 3H6.5V7H10.5V6.024L7.5 6V3Z"
-                                                fill="#333333"
-                                            />
-                                        </g>
-                                    </svg>
-                                    <span
-                                        class="text-gray-82 fs-13 font-arial ml-4 lh-1"
-                                        >3hr</span
-                                    >
-                                </div>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                    </div>
-                    <!-- end small -->
-                </section>
-                <!-- end box primary -->
-
-                <!-- box articles -->
-                <section class="wrapper w-1140">
-                    <div class="box-articles">
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                    </div>
-                </section>
-                <!-- end box articles -->
-
-                <!-- ads center-->
-                <div class="ads-center py-10">
-                    <img src="./images/ads_center.png" alt="" />
-                </div>
-                <!-- ads center-->
-
-                <!-- box articles -->
-                <section class="wrapper w-1140">
-                    <div class="box-articles">
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                        <!-- article -->
-                        <div class="article d-2xl-flex border-e5 py-15">
-                            <!-- img -->
-                            <div class="article__img flex-0 w-30">
-                                <a href="#" class="image-wrapper">
-                                    <img src="./images/3.jpg" alt="" />
-                                </a>
-                            </div>
-                            <!-- end img -->
-                            <!-- content -->
-                            <div class="article__content flex-1 pl-15">
-                                <h3
-                                    class="article__title fix-text3 fs-16 lh-130 fw-500"
-                                >
-                                    <a href="#"
-                                        >Học viện Nông nghiệp Việt Nam - nơi ươm
-                                        mầm nông nghiệp thông minh</a
-                                    >
-                                </h3>
-                            </div>
-                            <!-- end content -->
-                        </div>
-                        <!-- end article -->
-                    </div>
-                    <div class="d-2xl-flex items-center justify-center my-15">
-                        <button
-                            class="bg-blue-28 px-15 py-10 text-white fw-600 font-sarabun border-4 lh-150"
-                        >
-                            Xem thêm
-                        </button>
-                    </div>
-                </section>
-                <!-- end box articles -->
-
-                <!-- ads center-->
-                <div class="ads-center py-10">
-                    <img src="./images/ads_center.png" alt="" />
-                </div>
-                <!-- ads center-->
-            </div>
-            <!-- end mobile -->
+            
         </main>
         <!-- end main -->
         <!-- footer -->
