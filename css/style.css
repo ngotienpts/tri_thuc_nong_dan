@@ -1518,7 +1518,7 @@ img {
 .hover-orange circle {
   fill: transparent;
 }
-.hover-orange:hover {
+.hover-orange:hover > a {
   color: #c35403;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
@@ -1600,12 +1600,33 @@ img {
 .navbar {
   border-bottom: 2px solid #096639;
 }
-.navbar .navbar-item.active {
+.navbar .navbar-item {
+  position: relative;
+}
+.navbar .navbar-item.active > a {
   color: #096639;
 }
 .navbar .navbar-item a {
   padding: 10px;
   display: flex;
+}
+.navbar .navbar-item .navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  min-width: 200px;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.navbar .navbar-item .navbar-dropdown__item:hover a {
+  color: #ffffff;
+  background-color: #09663982;
+}
+.navbar .navbar-item:hover .navbar-dropdown {
+  display: block;
 }
 
 .breadcrumb-item {

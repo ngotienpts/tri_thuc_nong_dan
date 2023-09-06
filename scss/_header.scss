@@ -69,12 +69,34 @@
     border-bottom: 2px solid #096639;
 
     & .navbar-item {
-        &.active {
+        position: relative;
+        &.active > a {
             color: #096639;
         }
         a {
             padding: 10px;
             display: flex;
+        }
+        & .navbar-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            min-width: 200px;
+            background-color: white;
+            z-index: 10;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+            display: none;
+        }
+
+        & .navbar-dropdown__item {
+            &:hover a {
+                color: #ffffff;
+                background-color: #09663982;
+            }
+        }
+        &:hover .navbar-dropdown {
+            display: block;
         }
     }
 }
